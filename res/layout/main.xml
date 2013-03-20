@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_ip_address" />
+
+    <EditText
+        android:id="@+id/editText_IP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="169.234.134.93"
+        android:text="169.234.134.93" 
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView                                                                                                                                                             
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port Number:" />
+
+    <EditText
+        android:id="@+id/editText_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+         android:inputType="numberDecimal"
+        android:hint="9011"
+        android:text="9011" >                         
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Received From Server" />
+
+    <EditText
+        android:id="@+id/editText_receivedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+<TextView android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DotClickTest" />
+
+</LinearLayout>
